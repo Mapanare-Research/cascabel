@@ -25,7 +25,14 @@ sudo apt-get update
 sudo apt-get install -y clang make curl
 ```
 
-On macOS, install Apple's command-line developer tools with `xcode-select --install`.
+On macOS, install Apple's command-line developer tools with `xcode-select --install`,
+then install LLVM 18 with [Homebrew](https://brew.sh). The bootstrap compiler
+emits LLVM attributes that older Apple Clang versions cannot read.
+
+```bash
+brew install llvm@18
+export PATH="$(brew --prefix llvm@18)/bin:$PATH"
+```
 
 ```bash
 git clone https://github.com/Mapanare-Research/cascabel.git
