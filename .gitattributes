@@ -4,3 +4,8 @@
 *.sh text eol=lf
 *.yml text eol=lf
 Makefile text eol=lf
+
+# Exclude test and build tooling from engine language statistics.
+tests/** -linguist-detectable
+scripts/** -linguist-detectable
+Makefile -linguist-detectable

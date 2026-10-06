@@ -86,8 +86,8 @@ This is Cascabel's terminal protocol, not UCI.
 
 All chess logic is Mapanare. Python is used only by the black-box test harness;
 Make and Bash provide build tooling. GitHub does not yet recognize Mapanare
-in its automatic language statistics; the README badge identifies the actual
-implementation language.
+in its automatic language statistics. Test and build tooling is excluded from
+those statistics; the README badge identifies the actual implementation language.
 
 ## Tests
 
